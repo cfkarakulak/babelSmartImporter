@@ -1,0 +1,65 @@
+{
+  "_from": "babel-plugin-import-directory",
+  "_id": "babel-plugin-import-directory@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-D0zOCA1g+OPYFVDl1R63wcQ3/viQt9dwfQfu+QnsQcpHzbNkiNqnlFQnBWgMgaf/oReb8tKEQ1ssFUK4vOC2Xw==",
+  "_location": "/babel-plugin-import-directory",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "babel-plugin-import-directory",
+    "name": "babel-plugin-import-directory",
+    "escapedName": "babel-plugin-import-directory",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/babel-plugin-import-directory/-/babel-plugin-import-directory-1.1.0.tgz",
+  "_shasum": "69c3f630418cae8d97fec35211a6a538f6bb4df6",
+  "_spec": "babel-plugin-import-directory",
+  "_where": "/Users/cfkarakulak/Desktop/project/pcardin/static_omnishop",
+  "author": {
+    "name": "Anmo",
+    "email": "btavares26@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/Anmo/babel-plugin-import-directory/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@babel/template": "^7.1.2"
+  },
+  "deprecated": false,
+  "description": "Are you sick and tired of writing an `index.js` file, just to import/export all the other files in a directory?\n\nDon't seek more :)\n\nJust use `babel-plugin-import-directory` for that!",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "ava": "^0.22.0",
+    "node-readme": "^0.1.9",
+    "nyc": "^11.2.1"
+  },
+  "homepage": "https://github.com/Anmo/babel-plugin-import-directory#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "babel-plugin-import-directory",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Anmo/babel-plugin-import-directory.git"
+  },
+  "scripts": {
+    "build": "babel -d ./lib ./src",
+    "prepublish": "babel -d ./lib ./src --minified",
+    "readme": "node-readme",
+    "report": "nyc report --reporter=html",
+    "test": "nyc ava",
+    "test:watch": "yarn test -- --watch"
+  },
+  "version": "1.1.0"
+}
